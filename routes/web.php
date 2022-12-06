@@ -43,9 +43,9 @@ Route::middleware([
     Route::post('/storeCountry', [AddController::class, 'storeCountry'])->name('storeCountry');
 
     //edit
-    Route::get('/editPlayer/{id}', [editController::class, 'player'])->name('editPlayer');
-    Route::get('/editTeam/{id}', [editController::class, 'team'])->name('editTeam');
-    Route::get('/editCountry/{id}', [editController::class, 'country'])->name('editCountry');
+    Route::get('/editPlayer/{id}', [EditController::class, 'player'])->name('editPlayer');
+    Route::get('/editTeam/{id}', [EditController::class, 'team'])->name('editTeam');
+    Route::get('/editCountry/{id}', [EditController::class, 'country'])->name('editCountry');
     Route::post('/updatePlayer/{id}', [EditController::class, 'updatePlayer'])->name('updatePlayer');
     Route::post('/updateTeam/{id}', [EditController::class, 'updateTeam'])->name('updateTeam');
     Route::post('/updateCountry/{id}', [EditController::class, 'updateCountry'])->name('updateCountry');
